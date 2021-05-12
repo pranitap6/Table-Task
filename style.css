@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  background-color: #fff;
+  height: 100vh;
+  line-height: 1.5;
+}
+#content{
+  height: 100vh;
+  padding: 20px 30px;
+}
+#status{
+  margin-bottom: 10px;
+  padding: 0.5rem;
+}
+#table-content{
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+#table-content thead tr{
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+}
+#table-content th,
+#table-content td{
+  padding: 8px 30px;
+}
+.button-wrapper{
+  margin-top: 8px;
+}
+.btn{
+  padding:  12px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  margin-right: 0.2rem 
+}
+#table-content tbody tr{
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+#table-content tbody tr:nth-child(even){
+  background-color: #ccc;
+
+}
+.modal{
+  opacity: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+}
+.modal-content{
+  background-color: white;
+  width: 400px;
+  padding: 20px 25px;
+}
+h2{
+  font-size: 13px;
+}
+.modal header{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.modal header > div{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.modal header div h1{
+  margin-right: 20px;
+}
+.modal header div span{
+  font-size: 10px;
+  background-color: #bdd2b6;
+  padding: 0.2rem 0.3rem;
+  border-radius: 10px;
+}
+.modal header p{
+  font-size: 10px;
+  opacity: 0.7;
+}
+.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal section .modal-table{
+  border-collapse: collapse;
+}
+.modal section .modal-table tr{
+  border-bottom: 1px dotted #ccc;
+}
+.modal section .modal-table tr td{
+} 
+.modal section .modal-table tr:last-child{
+  border-bottom: none;
+}
+.button{
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

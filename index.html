@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section id="content">
+    <select name="status-filter" id="status">
+      <option value="no">All Launches</option>
+      <option value="upcoming">Upcoming Launches</option>
+      <option value="success">Successful Launches</option>
+      <option value="failed">Failed Launches</option>
+    </select>
+    <table id="table-content">
+      <thead>
+        <tr>   
+          <th>No</th>
+          <th>Launched</th>
+          <th>Location</th>
+          <th>Mission</th>
+          <th>Orbit</th>
+          <th>Status</th>
+          <th>Rocket</th>
+        </tr>
+      </thead>
+      <tbody class = "myTable">  
+      </tbody>
+    </table>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+      <section>
+        <table class="modal-table">
+          <tbody class="modal-wrapper">
+          </tbody>
+        </table>
+      </section>
+      <button class="button close">Close</button>
+      </div>
+    </div>
+    <div class="button-wrapper"></div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
